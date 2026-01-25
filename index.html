@@ -1,10 +1,116 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Foodie Marshmallow</title>
+
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+/* BACKGROUND IMAGE */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: url("bg.png.png") center / cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* DARK OVERLAY */
+.overlay{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    z-index: 1;
+}
+
+/* MAIN CONTENT */
+.main{
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 30px;
+    max-width: 1000px;
+    transform: translateY(-160px);
+}
+
+/* HEADER */
+.site-title{
+    font-size: 64px;
+    font-weight: 900;
+    color: #2e7d32;
+    margin-bottom: 20px;
+}
+
+/* CONTENT TEXT */
+.hero-text{
+    font-size: 22px;
+    color: #c62828;
+    line-height: 1.7;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* BOTTOM RIGHT TEXT */
+.credit-text{
+    position: fixed;
+    right: 40px;
+    bottom: 140px;     /* moved UP */
+    font-size: 26px;   /* bigger text */
+    color: #c62828;
+    z-index: 2;
+    text-align: right;
+    max-width: 320px;
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+/* MOBILE */
+@media (max-width: 600px){
+    .site-title{
+        font-size: 40px;
+    }
+    .hero-text{
+        font-size: 17px;
+    }
+    .credit-text{
+        font-size: 18px;
+        right: 20px;
+        bottom: 100px;
+    }
+}
+</style>
 </head>
+
 <body>
-  <h1>Hello! 🎉</h1>
-  <p>This is my first GitHub Pages website.</p>
-</body>
+
+<div class="overlay"></div>
+
+<div class="main">
+    <h1 class="site-title">The Foodie Marshmallow</h1>
+
+    <p class="hero-text">
+        This company was created by students of The Shri Ram School – Aravali, Gurugram, India.
+        The founders did not plan the name at first, but it later turned into a fun and creative idea
+        called <strong>The Foodie Marshmallow</strong>.
+    </p>
+</div>
+
+<div class="credit-text">
+    This game is also made by are CTO <br>
+    we hope you try it:
+</div>
+
 </html>
+
+
