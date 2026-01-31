@@ -1,47 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>The Foodie Marshmellow</title>
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-    }
+    <meta charset="UTF-8">
+    <title>My Website</title>
 
-    body {
-      background-image: url("background.png");
-      background-size: cover;       /* fills full screen */
-      background-position: center;  /* keeps image centered */
-      background-repeat: no-repeat;
-      font-family: Arial, sans-serif;
-      color: white;
-    }
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            font-family: Arial, sans-serif;
 
-    .overlay {
-      background-color: rgba(0, 0, 0, 0.55); /* dark overlay */
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-    }
+            /* BACKGROUND IMAGE */
+            background-image: url("backround.jpg.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
 
-    h1 {
-      font-size: 48px;
-    }
+        /* Optional overlay to make text readable */
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.4);
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
 
-    p {
-      font-size: 20px;
-    }
-  </style>
+        h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        p {
+            font-size: 20px;
+            max-width: 600px;
+        }
+
+        .credit-text {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            font-size: 14px;
+            color: #ffffff;
+            opacity: 0.8;
+        }
+    </style>
 </head>
+
 <body>
-  <div class="overlay">
-    <div>
-      <h1>The Foodie Marshmellow</h1>
-      <p>Delicious food. Creative ideas. Made with passion.</p>
+
+    <div class="overlay">
+        <h1>Welcome to My Website</h1>
+        <p>
+            This is my website made using HTML and CSS.  
+            I am learning web development and improving every day!
+        </p>
     </div>
-  </div>
+
+    <div class="credit-text">
+        Made by Me
+    </div>
+
 </body>
 </html>
