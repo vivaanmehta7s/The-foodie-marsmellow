@@ -1,70 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>My Website</title>
+  <meta charset="UTF-8">
+  <title>The Foodie Marshmallow</title>
 
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            font-family: Arial, sans-serif;
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background-image: url("background.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-            /* BACKGROUND IMAGE */
-            background-image: url("backround.jpg.png");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
+    .content-box {
+      background: rgba(255, 255, 255, 0.85);
+      max-width: 900px;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
 
-        /* Optional overlay to make text readable */
-        .overlay {
-            background-color: rgba(0, 0, 0, 0.4);
-            height: 100vh;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
-        }
+    h1 {
+      text-align: center;
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
 
-        h1 {
-            font-size: 48px;
-            margin: 0;
-        }
-
-        p {
-            font-size: 20px;
-            max-width: 600px;
-        }
-
-        .credit-text {
-            position: fixed;
-            right: 20px;
-            bottom: 20px;
-            font-size: 14px;
-            color: #ffffff;
-            opacity: 0.8;
-        }
-    </style>
+    p {
+      font-size: 18px;
+      line-height: 1.7;
+      color: #333;
+      text-align: justify;
+    }
+  </style>
 </head>
 
 <body>
 
-    <div class="overlay">
-        <h1>Welcome to My Website</h1>
-        <p>
-            This is my website made using HTML and CSS.  
-            I am learning web development and improving every day!
-        </p>
-    </div>
+  <div class="content-box">
+    <h1>The Foodie Marshmallow</h1>
 
-    <div class="credit-text">
-        Made by Me
-    </div>
+    <p>
+      <strong>The Foodie Marshmallow</strong> is a student-initiated project developed by students of
+      <strong>The Shri Ram School – Aravali, Gurugram, India</strong>. What began as a simple idea gradually
+      evolved into a creative and engaging concept that reflects innovation, curiosity, and collaborative learning.
+    </p>
+
+    <p>
+      The company website was designed and developed by one of the co-founders, along with an associated
+      game created by the student <strong>Chief Technology Officer (CTO)</strong>. This project highlights the
+      students’ strong interest in technology, creativity, and problem-solving through digital design and development.
+    </p>
+
+    <p>
+      <strong>The Foodie Marshmallow</strong> represents our commitment to learning through creation, and we
+      hope it is received as an example of student effort, imagination, and technical growth.
+    </p>
+  </div>
 
 </body>
 </html>
